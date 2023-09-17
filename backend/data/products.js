@@ -2,6 +2,7 @@ const products = [
   {
     name: "Airpods Wireless Bluetooth Headphones",
     image: "/images/airpods.jpg",
+
     description:
       "Bluetooth technology lets you connect it with compatible devices wirelessly High-quality AAC audio offers immersive listening experience Built-in microphone allows you to take calls while working",
     brand: "Apple",
@@ -71,6 +72,18 @@ const products = [
     rating: 4,
     numReviews: 12,
   },
+  // {
+  //   name: "Test",
+  //   image: "/images/alexa.jpg",
+  //   description:
+  //     "Meet Echo Dot - Our most popular smart speaker with a fabric design. It is our most compact smart speaker that fits perfectly into small space",
+  //   brand: "Amazon",
+  //   category: "Electronics",
+  //   price: 29.99,
+  //   countInStock: 0,
+  //   rating: 4,
+  //   numReviews: 12,
+  // },
 ];
 
 export default products;

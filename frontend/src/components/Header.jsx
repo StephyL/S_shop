@@ -1,11 +1,18 @@
 import { useNavigate } from "react-router-dom";
-import { Badge, Navbar, Nav, Container, NavDropdown } from "react-bootstrap";
+import {
+  Badge,
+  Navbar,
+  Nav,
+  Container,
+  NavDropdown,
+  Col,
+} from "react-bootstrap";
 import { FaShoppingCart, FaUser } from "react-icons/fa";
 import { LinkContainer } from "react-router-bootstrap";
 import { useSelector, useDispatch } from "react-redux";
 import { useLogoutMutation } from "../slices/usersApiSlice";
 import { logout } from "../slices/authSlice";
-import logo from "../assets/logo.png";
+import logo3 from "../assets/logo3.png";
 
 const Header = () => {
   const { cartItems } = useSelector((state) => state.cart);
@@ -30,9 +37,13 @@ const Header = () => {
       <Navbar bg="dark" variant="dark" expand="md" collapseOnSelect>
         <Container>
           <LinkContainer to="/">
-            <Navbar.Brand>
-              <img src={logo} alt="Proshop" />
-              Proshop
+            <Navbar.Brand className="navbarBrand">
+              <img
+                className="navbarBrandImage"
+                src={logo3}
+                alt="Rosella House"
+              />
+              Rosella House
             </Navbar.Brand>
           </LinkContainer>
 
