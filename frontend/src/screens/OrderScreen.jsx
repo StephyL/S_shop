@@ -185,11 +185,14 @@ const OrderScreen = () => {
                 </Row>
                 <Row>
                   <Col>Tax</Col>
-                  <Col>${order.taxPrice}</Col>
+                  {/* <Col>${order.taxPrice}</Col> */}
+                  <Col>${(order.itemsPrice * 0.15).toFixed(2)}</Col>
                 </Row>
                 <Row>
                   <Col>Total</Col>
-                  <Col>${order.totalPrice}</Col>
+                  <Col>
+                    ${(order.itemsPrice + order.itemsPrice * 0.15).toFixed(2)}
+                  </Col>
                 </Row>
               </ListGroup.Item>
               {!order.isPaid && (
